@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+
+<body text="white" bgcolor="black">
+<title>LOGIN</title>
+	<center>
+		<h1>
+			<b>
+			Digite seus dados de login
+			</b>
+		</h1>
+	</center>
+
+		<table align="center" border=20 cellpadding="200" width="500" height="500" id="tabela">
+				
+				<tr>	
+					<td bgcolor="black">
+								<b>
+									Login
+								</b>
+									<input style="border-color:grey" id="login"/>	
+							<br>
+							<br>
+									<b>
+										Senha
+									</b>
+									 <input style="border-color:grey" id="senha">
+							<br>
+							<br>
+									<center>
+										<button style="background:green; border-color:white; black" id="aqui">
+											<b>
+											ENTRAR
+											</b>
+										</button>
+									</center>
+					</td>						
+				</tr>
+		</table>
+		
+</body>
+
+<script>
+
+	var login = document.getElementById("login");
+	login.value = "";
+	login.focus();
+	var senha = document.getElementById("senha");
+	senha.value = "";
+
+function confere()
+
+{
+
+
+	if(login.value == "portifolio" || senha.value == 123)
+	{
+		
+		location.href = "html/index.html";	
+	}else
+			{
+
+			alert("Você deve preencher todos os campos com login e senha para acessar o sistema!");
+
+			}
+	
+	login.value = "";
+	senha.value = "";
+	login.focus();
+
+}
+	
+var button = document.getElementById("aqui");
+
+button.onclick = confere;
+
+</script>
