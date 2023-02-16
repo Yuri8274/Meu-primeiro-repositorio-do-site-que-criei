@@ -52,11 +52,13 @@ function confere()
 {
 
 
-	if(login.value == "portifolio" || senha.value == 123)
-	{
-		
-		location.href = "html/site.html";	
-	}else
+	if(login.value == "portifolio")
+	{ 
+		if(senha.value == 123)
+		{
+		location.href = "html/site.html";
+	}
+		}else
 			{
 
 			alert("Você deve preencher todos os campos com login e senha para acessar o sistema!");
