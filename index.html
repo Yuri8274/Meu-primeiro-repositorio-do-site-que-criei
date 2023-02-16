@@ -17,7 +17,7 @@
 								<b>
 									Login
 								</b>
-									<input style="border-color:grey" id="login"/>	
+									<input style="border-color:grey" id="login" type="password"/>	
 							<br>
 							<br>
 									<b>
@@ -57,7 +57,12 @@ function confere()
 		if(senha.value == 123)
 		{
 		location.href = "html/site.html";
-	}
+	}else
+			{
+
+			alert("Você deve preencher todos os campos com login e senha para acessar o sistema!");
+
+			}
 		}else
 			{
 
